@@ -1,5 +1,4 @@
 # api_auto_test
-
 部署环境时，首先执行requirements.txt，命令如下:
     导出环境中的第三方库：pip freeze > requirements.txt
     新的服务器导入第三方库：pip -r install requirements.txt
@@ -29,3 +28,16 @@
 
 6、TestDatas
 
+
+
+git常用命令
+    git clone 拷贝副本到本地
+    git status 查看未被追踪的文件
+    git add 追踪文件
+    git commit -m "注释" 提交文件
+    git push 推到远程
+    git branch 查看本地所有的分支
+    git branch -a 查看所有的远程分支
+    git checkout -b branch1 创建分支
+    git checkout master 切换分支
+    git push --set-upstream origin branch1 将分支推送到远程
