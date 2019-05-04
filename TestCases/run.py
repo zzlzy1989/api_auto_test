@@ -8,7 +8,7 @@
 
 import unittest
 # from TestCases import test_login
-import HTMLTestRunnerNew
+from Common import HTMLTestRunnerNew
 from Common import contants
 from Common.config import config
 
