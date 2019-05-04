@@ -116,8 +116,8 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">API自动化测试框架</h1>
 <p class='attribute'><strong>测试人员 : </strong> GaoXu</p>
-<p class='attribute'><strong>开始时间 : </strong> 2019-05-03 19:35:28</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:07.135409</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-05-05 00:03:32</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:06.591377</p>
 <p class='attribute'><strong>测试结果 : </strong> 共 29，通过 28，失败 1，通过率= 96.55%</p>
 
 <p class='description'>搭建接口自动化框架，进行自动化测试接口</p>
@@ -546,11 +546,11 @@ Traceback (most recent call last):
     msg = msg % self.args
 TypeError: not all arguments converted during string formatting
 Call stack:
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 35, in &lt;module&gt;
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
     htmltestrunner.html_test()
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 30, in html_test
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
     runner.run(discover)
-  File "E:\PycharmProjects\api_AutoTest\Common\HTMLTestRunnerNew.py", line 541, in run
+  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
     test(result)
   File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
     return self.run(*args, **kwds)
@@ -586,11 +586,11 @@ Traceback (most recent call last):
     msg = msg % self.args
 TypeError: not all arguments converted during string formatting
 Call stack:
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 35, in &lt;module&gt;
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
     htmltestrunner.html_test()
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 30, in html_test
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
     runner.run(discover)
-  File "E:\PycharmProjects\api_AutoTest\Common\HTMLTestRunnerNew.py", line 541, in run
+  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
     test(result)
   File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
     return self.run(*args, **kwds)
@@ -647,11 +647,11 @@ Traceback (most recent call last):
     msg = msg % self.args
 TypeError: not all arguments converted during string formatting
 Call stack:
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 35, in &lt;module&gt;
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
     htmltestrunner.html_test()
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 30, in html_test
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
     runner.run(discover)
-  File "E:\PycharmProjects\api_AutoTest\Common\HTMLTestRunnerNew.py", line 541, in run
+  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
     test(result)
   File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
     return self.run(*args, **kwds)
@@ -687,11 +687,11 @@ Traceback (most recent call last):
     msg = msg % self.args
 TypeError: not all arguments converted during string formatting
 Call stack:
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 35, in &lt;module&gt;
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
     htmltestrunner.html_test()
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 30, in html_test
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
     runner.run(discover)
-  File "E:\PycharmProjects\api_AutoTest\Common\HTMLTestRunnerNew.py", line 541, in run
+  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
     test(result)
   File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
     return self.run(*args, **kwds)
@@ -717,10 +717,10 @@ Message: '测试入参 '
 Arguments: ('{"mobilephone": "18888886666", "amount": "200"}',)
 测试用例标题  充值成功
 测试入参  {"mobilephone": "18888886666", "amount": "200"}
-执行sql返回一个字典:{'Type': 1, 'MobilePhone': '18888886666', 'RegName': '小蜜蜂', 'RegTime': datetime.datetime(2019, 5, 1, 22, 56, 38), 'LeaveAmount': Decimal('-77.00'), 'Pwd': 'E10ADC3949BA59ABBE56E057F20F883E', 'Id': 123}
-充值前金额:{} -77.00
-http_request类，请求response  {"status":1,"code":"10001","data":{"id":123,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"18888886666","leaveamount":"123.00","type":"1","regtime":"2019-05-01 22:56:38.0"},"msg":"充值成功"}
-充值后金额:123.00
+执行sql返回一个字典:{'RegName': '小蜜蜂', 'Pwd': 'E10ADC3949BA59ABBE56E057F20F883E', 'Id': 123, 'LeaveAmount': Decimal('123.00'), 'RegTime': datetime.datetime(2019, 5, 1, 22, 56, 38), 'MobilePhone': '18888886666', 'Type': 1}
+充值前金额:{} 123.00
+http_request类，请求response  {"status":1,"code":"10001","data":{"id":123,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"18888886666","leaveamount":"323.00","type":"1","regtime":"2019-05-01 22:56:38.0"},"msg":"充值成功"}
+充值后金额:323.00
 
 
     </pre>
@@ -751,11 +751,11 @@ Traceback (most recent call last):
     msg = msg % self.args
 TypeError: not all arguments converted during string formatting
 Call stack:
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 35, in &lt;module&gt;
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
     htmltestrunner.html_test()
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 30, in html_test
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
     runner.run(discover)
-  File "E:\PycharmProjects\api_AutoTest\Common\HTMLTestRunnerNew.py", line 541, in run
+  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
     test(result)
   File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
     return self.run(*args, **kwds)
@@ -791,11 +791,11 @@ Traceback (most recent call last):
     msg = msg % self.args
 TypeError: not all arguments converted during string formatting
 Call stack:
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 35, in &lt;module&gt;
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
     htmltestrunner.html_test()
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 30, in html_test
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
     runner.run(discover)
-  File "E:\PycharmProjects\api_AutoTest\Common\HTMLTestRunnerNew.py", line 541, in run
+  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
     test(result)
   File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
     return self.run(*args, **kwds)
@@ -852,11 +852,11 @@ Traceback (most recent call last):
     msg = msg % self.args
 TypeError: not all arguments converted during string formatting
 Call stack:
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 35, in &lt;module&gt;
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
     htmltestrunner.html_test()
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 30, in html_test
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
     runner.run(discover)
-  File "E:\PycharmProjects\api_AutoTest\Common\HTMLTestRunnerNew.py", line 541, in run
+  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
     test(result)
   File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
     return self.run(*args, **kwds)
@@ -892,11 +892,11 @@ Traceback (most recent call last):
     msg = msg % self.args
 TypeError: not all arguments converted during string formatting
 Call stack:
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 35, in &lt;module&gt;
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
     htmltestrunner.html_test()
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 30, in html_test
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
     runner.run(discover)
-  File "E:\PycharmProjects\api_AutoTest\Common\HTMLTestRunnerNew.py", line 541, in run
+  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
     test(result)
   File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
     return self.run(*args, **kwds)
@@ -953,11 +953,11 @@ Traceback (most recent call last):
     msg = msg % self.args
 TypeError: not all arguments converted during string formatting
 Call stack:
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 35, in &lt;module&gt;
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
     htmltestrunner.html_test()
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 30, in html_test
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
     runner.run(discover)
-  File "E:\PycharmProjects\api_AutoTest\Common\HTMLTestRunnerNew.py", line 541, in run
+  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
     test(result)
   File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
     return self.run(*args, **kwds)
@@ -993,11 +993,11 @@ Traceback (most recent call last):
     msg = msg % self.args
 TypeError: not all arguments converted during string formatting
 Call stack:
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 35, in &lt;module&gt;
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
     htmltestrunner.html_test()
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 30, in html_test
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
     runner.run(discover)
-  File "E:\PycharmProjects\api_AutoTest\Common\HTMLTestRunnerNew.py", line 541, in run
+  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
     test(result)
   File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
     return self.run(*args, **kwds)
@@ -1054,11 +1054,11 @@ Traceback (most recent call last):
     msg = msg % self.args
 TypeError: not all arguments converted during string formatting
 Call stack:
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 35, in &lt;module&gt;
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
     htmltestrunner.html_test()
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 30, in html_test
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
     runner.run(discover)
-  File "E:\PycharmProjects\api_AutoTest\Common\HTMLTestRunnerNew.py", line 541, in run
+  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
     test(result)
   File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
     return self.run(*args, **kwds)
@@ -1094,11 +1094,11 @@ Traceback (most recent call last):
     msg = msg % self.args
 TypeError: not all arguments converted during string formatting
 Call stack:
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 35, in &lt;module&gt;
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
     htmltestrunner.html_test()
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 30, in html_test
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
     runner.run(discover)
-  File "E:\PycharmProjects\api_AutoTest\Common\HTMLTestRunnerNew.py", line 541, in run
+  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
     test(result)
   File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
     return self.run(*args, **kwds)
@@ -1155,11 +1155,11 @@ Traceback (most recent call last):
     msg = msg % self.args
 TypeError: not all arguments converted during string formatting
 Call stack:
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 35, in &lt;module&gt;
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
     htmltestrunner.html_test()
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 30, in html_test
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
     runner.run(discover)
-  File "E:\PycharmProjects\api_AutoTest\Common\HTMLTestRunnerNew.py", line 541, in run
+  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
     test(result)
   File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
     return self.run(*args, **kwds)
@@ -1195,11 +1195,11 @@ Traceback (most recent call last):
     msg = msg % self.args
 TypeError: not all arguments converted during string formatting
 Call stack:
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 35, in &lt;module&gt;
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
     htmltestrunner.html_test()
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 30, in html_test
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
     runner.run(discover)
-  File "E:\PycharmProjects\api_AutoTest\Common\HTMLTestRunnerNew.py", line 541, in run
+  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
     test(result)
   File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
     return self.run(*args, **kwds)
@@ -1256,11 +1256,11 @@ Traceback (most recent call last):
     msg = msg % self.args
 TypeError: not all arguments converted during string formatting
 Call stack:
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 35, in &lt;module&gt;
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
     htmltestrunner.html_test()
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 30, in html_test
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
     runner.run(discover)
-  File "E:\PycharmProjects\api_AutoTest\Common\HTMLTestRunnerNew.py", line 541, in run
+  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
     test(result)
   File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
     return self.run(*args, **kwds)
@@ -1296,11 +1296,11 @@ Traceback (most recent call last):
     msg = msg % self.args
 TypeError: not all arguments converted during string formatting
 Call stack:
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 35, in &lt;module&gt;
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
     htmltestrunner.html_test()
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 30, in html_test
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
     runner.run(discover)
-  File "E:\PycharmProjects\api_AutoTest\Common\HTMLTestRunnerNew.py", line 541, in run
+  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
     test(result)
   File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
     return self.run(*args, **kwds)
@@ -1357,11 +1357,11 @@ Traceback (most recent call last):
     msg = msg % self.args
 TypeError: not all arguments converted during string formatting
 Call stack:
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 35, in &lt;module&gt;
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
     htmltestrunner.html_test()
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 30, in html_test
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
     runner.run(discover)
-  File "E:\PycharmProjects\api_AutoTest\Common\HTMLTestRunnerNew.py", line 541, in run
+  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
     test(result)
   File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
     return self.run(*args, **kwds)
@@ -1397,11 +1397,11 @@ Traceback (most recent call last):
     msg = msg % self.args
 TypeError: not all arguments converted during string formatting
 Call stack:
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 35, in &lt;module&gt;
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
     htmltestrunner.html_test()
-  File "E:/PycharmProjects/api_AutoTest/TestCases/run.py", line 30, in html_test
+  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
     runner.run(discover)
-  File "E:\PycharmProjects\api_AutoTest\Common\HTMLTestRunnerNew.py", line 541, in run
+  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
     test(result)
   File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
     return self.run(*args, **kwds)
@@ -1457,8 +1457,8 @@ http_request类，请求response  {"status":0,"code":"20118","data":null,"msg":"
     
 pt5_1: 开始测试:注册成功
 测试用例入参:{"mobilephone":"register_mobile","pwd":"123456"}
-最大手机号码  18999999305
-注册前手机号为:18999999304
+最大手机号码  18999999407
+注册前手机号为:18999999406
 http_request类，请求response  {"status":1,"code":"10001","data":null,"msg":"注册成功"}
 
 

@@ -57,6 +57,14 @@
     5、New Branch,创建一个新的分支，以当前获取的分支代码为基准！
     6、修改代码并进行提交，右键Git>Commit Files，查看修改记录，点击commit and push进行提交；提交完成后就可以在GitHub网站中进行合并分支
 
-
-
-
+五、Jenkins持续集成
+    1、安装jenkins，方式1：官网下载jenkins.war，java -jar jenkins.war，命令行停掉，服务会停掉 --httpPort=8888修改端口号
+    2、下载jenkins.war包，加到tomcat中，进行控制，启动tomcat时，jenkins自动启动 --server.xml修改端口号
+    3、windows中，安装pgk，jenkins.msi文件，安装完成后，自动加入服务中，服务中加入jenkins服务，自动启动（修改端口号：文件找到jenkins
+        ，修改httpPort=8888）
+    4、默认安装目录为D:\Jenkins
+    5、持续集成工具还有hudson，jenkins
+    6、jenkins主要做，拿到开发的最新代码部署到服务器上
+    7、系统设置--全局工具配置（配置git地址，安装版本）--插件管理（enkins安装插件：HTML Publisher/git/Email Extension）
+    8、mater-slave主从构建，分布式构建，web ui。修改jenkins配置，可以使用grouvy
+    9、新增
