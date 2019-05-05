@@ -52,7 +52,7 @@
 
     git clone 拷贝副本到本地
     git status 查看未被追踪的文件
-    git add 追踪文件
+    git add 追踪文件F
     git commit -m "注释" 提交文件
     git push 推到远程
     git branch 查看本地所有的分支
@@ -81,4 +81,10 @@
     6、jenkins主要做，拿到开发的最新代码部署到服务器上
     7、系统设置--全局工具配置（配置git地址，安装版本）--插件管理（enkins安装插件：HTML Publisher/git/Email Extension）
     8、mater-slave主从构建，分布式构建，web ui。修改jenkins配置，可以使用grouvy
-    9、新增
+    9、在jenkin配置中，添加：构建》执行Windows批处理命令》
+        命令：pip install -r requirements.txt --user
+        python TestCases/run.py
+        添加：构建后操作 Publis HTML Reports： HTML directory to archive（文件路径）Index page[s]（页面地址）Report title（标题）
+        添加：Editable Extended Email Publisher 》》》 Attachments（附件）Reports/report.html,
+            Attach Build Log配置Do Not Attach Build Log
+    10、点击构建，即可进行自动构建项目！
