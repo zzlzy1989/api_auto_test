@@ -15,8 +15,8 @@
         do_mysql 操作数据库，完成与MySQL数据库的交互
         http_request 使用这类的request方法去完成不同的http请求，并且返回响应结果
         HTMLTestRunnerNew 生成测试报告模板
-        logger 日志处理
-
+        logger 日志处理  
+ 
     2、Config    配置文件
         global.conf 全局变量，控制使用线上还是test的环境开关
         online.conf 线上环境的配置  包含接口地址，数据库地址和HTMLTestRunnerNew的配置信息
