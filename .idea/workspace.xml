@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68b4b091-81e7-432e-8d13-d901db5b0842" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/ProgramFiles/__init__.py" afterDir="false" />
+    <list default="true" id="68b4b091-81e7-432e-8d13-d901db5b0842" name="Default" comment="commit updateREADME">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/case.log" beforeDir="false" afterPath="$PROJECT_DIR$/Log/case.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestDatas/cases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/TestDatas/cases.xlsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,20 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="646">
-                <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -75,36 +56,6 @@
               <item name="api_auto_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="api_auto_test" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="api_auto_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api_auto_test" type="462c0819:PsiDirectoryNode" />
-              <item name="Config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api_auto_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api_auto_test" type="462c0819:PsiDirectoryNode" />
-              <item name="Demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api_auto_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api_auto_test" type="462c0819:PsiDirectoryNode" />
-              <item name="Log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api_auto_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api_auto_test" type="462c0819:PsiDirectoryNode" />
-              <item name="Reports" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api_auto_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api_auto_test" type="462c0819:PsiDirectoryNode" />
-              <item name="TestCases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api_auto_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api_auto_test" type="462c0819:PsiDirectoryNode" />
-              <item name="TestDatas" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -114,6 +65,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="E:/Pycharm_workspace" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -134,7 +86,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run (1)">
+  <component name="RunManager" selected="Python.run">
     <configuration name="run (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="api_AutoTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -213,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556981161763</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit updateREADME">
+      <created>1557033305059</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1557033305060</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -227,7 +186,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17228661" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -302,7 +260,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="提交" />
     <MESSAGE value="添加备注" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加备注" />
+    <MESSAGE value="commit updateREADME" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit updateREADME" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -358,8 +317,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="646">
-            <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+          <first_editor relative-caret-position="589">
+            <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
           </first_editor>
           <second_editor />
         </state>
