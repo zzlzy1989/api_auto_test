@@ -1,12 +1,15 @@
-#一、项目描述：
-## api_auto_test 接口自动化测试框架（简易版）
-###引言
-    部署环境时，首先执行requirements.txt，命令如下:
-    导出环境中的第三方库：pip freeze > requirements.txt
-    新的服务器导入第三方库：pip -r install requirements.txt
+一、项目描述：
+
+        api_auto_test 接口自动化测试框架（简易版）
+引言
+        
+        部署环境时，首先执行requirements.txt，命令如下:
+        导出环境中的第三方库：pip freeze > requirements.txt
+        新的服务器导入第三方库：pip -r install requirements.txt
     
-##二、各个模块简介
-###1、Common封装的常用的方法
+二、各个模块简介
+
+    1、Common封装的常用的方法
 
         contants 方法为定义路径方法，获取文件路径和其他参数的路径
         do_excel 操作excel方法
@@ -18,21 +21,21 @@
         HTMLTestRunnerNew 生成测试报告模板
         logger 日志处理  
         
-###2、Config    配置文件
+    2、Config    配置文件
 
         global.conf 全局变量，控制使用线上还是test的环境开关
         online.conf 线上环境的配置  包含接口地址，数据库地址和HTMLTestRunnerNew的配置信息
         test.conf   测试环境配置
         
-###3、Log
-
+    3、Log
+    
         存放日志文件
         
-###4、Reports
+    4、Reports
 
         report.html 生成的测试报告文件
         
-###5、TestCases
+    5、TestCases
 
         run.py  使用unittest，调用defaultTestLoader方法，加载discover，用来查询某个文件夹下以test_开头的.py结尾的文件，用来执行所有的测试用例，并生成测试报告
         test_add 加标测试用例
@@ -41,11 +44,11 @@
         test_recharge 充值测试用例
         test_register 注册测试用例
         
-###6、TestDatas
+    6、TestDatas
 
         cases.xlsx 维护测试用例
         
-##三、git常用命令
+三、git常用命令
 
     git clone 拷贝副本到本地
     git status 查看未被追踪的文件
@@ -58,7 +61,7 @@
     git checkout master 切换分支
     git push --set-upstream origin branch1 将分支推送到远程
     
-##四、pycharm操作git
+四、pycharm操作git
 
     1、安装完成git以后，在setting中设置git.exe文件，在安装目录中找到git.exe文件，然后就可以在pycharm中操作git了
     2、在右下角有git的分支结构，local branchs代表本地分支结构，remot branchs远程分支结构
@@ -67,7 +70,7 @@
     5、New Branch,创建一个新的分支，以当前获取的分支代码为基准！
     6、修改代码并进行提交，右键Git>Commit Files，查看修改记录，点击commit and push进行提交；提交完成后就可以在GitHub网站中进行合并分支
 
-##五、Jenkins持续集成
+五、Jenkins持续集成
 
     1、安装jenkins，方式1：官网下载jenkins.war，java -jar jenkins.war，命令行停掉，服务会停掉 --httpPort=8888修改端口号
     2、下载jenkins.war包，加到tomcat中，进行控制，启动tomcat时，jenkins自动启动 --server.xml修改端口号
