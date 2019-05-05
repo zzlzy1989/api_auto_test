@@ -1,11 +1,12 @@
-一、项目描述：
-# api_auto_test 接口自动化测试框架（简易版）
-部署环境时，首先执行requirements.txt，命令如下:
+#一、项目描述：
+### api_auto_test 接口自动化测试框架（简易版）
+    部署环境时，首先执行requirements.txt，命令如下:
     导出环境中的第三方库：pip freeze > requirements.txt
     新的服务器导入第三方库：pip -r install requirements.txt
 
 
-二、各个模块简介
+###二、各个模块简介
+
     1、Common封装的常用的方法
         contants 方法为定义路径方法，获取文件路径和其他参数的路径
         do_excel 操作excel方法
@@ -16,12 +17,10 @@
         http_request 使用这类的request方法去完成不同的http请求，并且返回响应结果
         HTMLTestRunnerNew 生成测试报告模板
         logger 日志处理
-
     2、Config    配置文件
         global.conf 全局变量，控制使用线上还是test的环境开关
         online.conf 线上环境的配置  包含接口地址，数据库地址和HTMLTestRunnerNew的配置信息
         test.conf   测试环境配置
-
     3、Log
         存放日志文件
     4、Reports
@@ -37,7 +36,8 @@
         cases.xlsx 维护测试用例
 
 
-三、git常用命令
+###三、git常用命令
+
     git clone 拷贝副本到本地
     git status 查看未被追踪的文件
     git add 追踪文件
@@ -49,7 +49,8 @@
     git checkout master 切换分支
     git push --set-upstream origin branch1 将分支推送到远程
 
-四、pycharm操作git
+###四、pycharm操作git
+
     1、安装完成git以后，在setting中设置git.exe文件，在安装目录中找到git.exe文件，然后就可以在pycharm中操作git了
     2、在右下角有git的分支结构，local branchs代表本地分支结构，remot branchs远程分支结构
     3、在开发新的代码时，首先创建一个分支，或者是用本地分支
