@@ -5,9 +5,9 @@
 #@File      :run.py
 #@Software  :PyCharm Community Edition
 
-import sys
-sys.path.append('./') #project跟目录地址
-print(sys.path)
+# import sys
+# sys.path.append('./') #project跟目录地址
+# print(sys.path)
 
 import unittest
 # from TestCases import test_login

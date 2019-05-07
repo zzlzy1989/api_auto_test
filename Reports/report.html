@@ -116,19 +116,19 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">API自动化测试框架</h1>
 <p class='attribute'><strong>测试人员 : </strong> GaoXu</p>
-<p class='attribute'><strong>开始时间 : </strong> 2019-05-05 00:03:32</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:06.591377</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 29，通过 28，失败 1，通过率= 96.55%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-05-07 11:43:42</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.239945</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 6，通过 2，错误 4，通过率= 33.33%</p>
 
 <p class='description'>搭建接口自动化框架，进行自动化测试接口</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 96.55% }</a>
-<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 1 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 28 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 29 }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 33.33% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 2 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 6 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -198,31 +198,38 @@ http_request类，请求response  {"status":1,"code":"10001","data":null,"msg":"
     </td>
 </tr>
 
-<tr class='failClass warning'>
-    <td>test_invest.InvestTest</td>
-    <td class="text-center">7</td>
-    <td class="text-center">6</td>
-    <td class="text-center">1</td>
+<tr class='errorClass warning'>
+    <td>unittest.loader._FailedTest</td>
+    <td class="text-center">4</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c2',7)" class="detail" id='c2'>详细</a></td>
+    <td class="text-center">0</td>
+    <td class="text-center">4</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',4)" class="detail" id='c2'>详细</a></td>
 </tr>
 
-<tr id='pt2_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_invest_1</div></td>
+<tr id='ft2_1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_invest</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
-    <div id='div_pt2_1' class="collapse">  -->
+    <button id='btn_ft2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_1'>错误</button>
+    <div id='div_ft2_1' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
-    <div id='div_pt2_1' class="collapse in" align="left">
+    <button id='btn_ft2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_1'>错误</button>
+    <div id='div_ft2_1' class="collapse in" align="left">
     <pre>
     
-pt2_1: 开始执行测试用例  管理员正常登陆
-context.v:18888886666
-context.v:123456
-替换配置文件完成后，data的值:{"mobilephone":"18888886666","pwd":"123456"}
-http_request类，请求response  {"status":1,"code":"10001","data":null,"msg":"登录成功"}
+ft2_1: ImportError: Failed to import test module: test_invest
+Traceback (most recent call last):
+  File "D:\python3.6\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "D:\python3.6\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "F:\api_auto_test\Testcases\test_invest.py", line 13, in &lt;module&gt;
+    from Common import do_mysql
+  File "F:\api_auto_test\Common\do_mysql.py", line 8, in &lt;module&gt;
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
+
 
 
     </pre>
@@ -230,24 +237,29 @@ http_request类，请求response  {"status":1,"code":"10001","data":null,"msg":"
     </td>
 </tr>
 
-<tr id='pt2_2' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_invest_2</div></td>
+<tr id='ft2_2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_login</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_pt2_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_2'>通过</button>
-    <div id='div_pt2_2' class="collapse">  -->
+    <button id='btn_ft2_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_2'>错误</button>
+    <div id='div_ft2_2' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt2_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_2'>通过</button>
-    <div id='div_pt2_2' class="collapse in" align="left">
+    <button id='btn_ft2_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_2'>错误</button>
+    <div id='div_ft2_2' class="collapse in" align="left">
     <pre>
     
-pt2_2: 开始执行测试用例  管理员加标
-context.v:575
-替换配置文件完成后，data的值:{"memberId":"575","title":"千里之行始于足下","amount":"10000.00","loanRate":"18.00","loanTerm":"6","loanDateType":"0","repaymemtWay":"4","biddingDays":"10"}
-http_request类，请求response  {"status":1,"code":"10001","data":null,"msg":"加标成功"}
-context.v:575
-替换配置文件完成后，sql的值:{"sql1": "select * from future.loan where memberid = '575' order by Id limit 1"}
-加标之后的标的ID  196
+ft2_2: ImportError: Failed to import test module: test_login
+Traceback (most recent call last):
+  File "D:\python3.6\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "D:\python3.6\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "F:\api_auto_test\Testcases\test_login.py", line 13, in &lt;module&gt;
+    from Common import do_mysql
+  File "F:\api_auto_test\Common\do_mysql.py", line 8, in &lt;module&gt;
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
+
 
 
     </pre>
@@ -256,30 +268,27 @@ context.v:575
 </tr>
 
 <tr id='ft2_3' class='none'>
-    <td class='failCase'><div class='testcase'>test_invest_3</div></td>
+    <td class='errorCase'><div class='testcase'>test_recharge</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft2_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_3'>失败</button>
+    <button id='btn_ft2_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_3'>错误</button>
     <div id='div_ft2_3' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft2_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_3'>失败</button>
+    <button id='btn_ft2_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_3'>错误</button>
     <div id='div_ft2_3' class="collapse in" align="left">
     <pre>
     
-ft2_3: 开始执行测试用例  管理员审核
-context.v:196
-替换配置文件完成后，data的值:{"id":"196","status":4}
-http_request类，请求response  {"status":0,"code":"20207","data":null,"msg":"修改失败，当前标已经是该状态"}
+ft2_3: ImportError: Failed to import test module: test_recharge
 Traceback (most recent call last):
-  File "D:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\PycharmProjects\api_AutoTest\Testcases\test_invest.py", line 119, in test_invest
-    raise e
-  File "E:\PycharmProjects\api_AutoTest\Testcases\test_invest.py", line 62, in test_invest
-    self.assertEqual(str(case.expected),actual_code)
-AssertionError: '10001' != '20207'
-- 10001
-+ 20207
+  File "D:\python3.6\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "D:\python3.6\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "F:\api_auto_test\Testcases\test_recharge.py", line 13, in &lt;module&gt;
+    from Common import do_mysql
+  File "F:\api_auto_test\Common\do_mysql.py", line 8, in &lt;module&gt;
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
 
 
 
@@ -288,1283 +297,29 @@ AssertionError: '10001' != '20207'
     </td>
 </tr>
 
-<tr id='pt2_4' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_invest_4</div></td>
+<tr id='ft2_4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_pt2_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_4'>通过</button>
-    <div id='div_pt2_4' class="collapse">  -->
+    <button id='btn_ft2_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_4'>错误</button>
+    <div id='div_ft2_4' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt2_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_4'>通过</button>
-    <div id='div_pt2_4' class="collapse in" align="left">
+    <button id='btn_ft2_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_4'>错误</button>
+    <div id='div_ft2_4' class="collapse in" align="left">
     <pre>
     
-pt2_4: 开始执行测试用例  投资人正常登陆
-context.v:18888886666
-context.v:123456
-替换配置文件完成后，data的值:{"mobilephone":"18888886666","pwd":"123456"}
-http_request类，请求response  {"status":1,"code":"10001","data":null,"msg":"登录成功"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt2_5' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_invest_5</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt2_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_5'>通过</button>
-    <div id='div_pt2_5' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt2_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_5'>通过</button>
-    <div id='div_pt2_5' class="collapse in" align="left">
-    <pre>
-    
-pt2_5: 开始执行测试用例  投资人正常投资
-context.v:123
-context.v:123456
-context.v:196
-替换配置文件完成后，data的值:{"memberId":"123","password":"123456","loanId":"196","amount":"100"}
-context.v:18888886666
-context.v:123
-context.v:123
-替换配置文件完成后，sql的值:{
- "sql1": "select * from future.member where mobilephone ='18888886666'",
- "sql2": "SELECT * from future.financelog where PayMemberId = '123' order by Id desc limit 1",
- "sql3": "select * from future.invest where MemberID = '123' order by Id DESC limit  1"
-}
-before_leave_amount:
-http_request类，请求response  {"status":1,"code":"10001","data":null,"msg":"竞标成功"}
-替换配置文件完成后，sql的值:{
- "sql1": "select * from future.member where mobilephone ='18888886666'",
- "sql2": "SELECT * from future.financelog where PayMemberId = '123' order by Id desc limit 1",
- "sql3": "select * from future.invest where MemberID = '123' order by Id DESC limit  1"
-}
-after_leave_amount:
-financelog_amount:
-invest_amount:
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt2_6' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_invest_6</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt2_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_6'>通过</button>
-    <div id='div_pt2_6' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt2_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_6'>通过</button>
-    <div id='div_pt2_6' class="collapse in" align="left">
-    <pre>
-    
-pt2_6: 开始执行测试用例  投资人投资不输入金额
-context.v:123
-context.v:123456
-context.v:196
-替换配置文件完成后，data的值:{"memberId":"123","password":"123456","loanId":"196","amount":""}
-http_request类，请求response  {"status":0,"code":"11003","data":null,"msg":"参数错误:所有参数都不能为空"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt2_7' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_invest_7</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt2_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_7'>通过</button>
-    <div id='div_pt2_7' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt2_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_7'>通过</button>
-    <div id='div_pt2_7' class="collapse in" align="left">
-    <pre>
-    
-pt2_7: 开始执行测试用例  投资人投资输入负数
-context.v:123
-context.v:123456
-context.v:196
-替换配置文件完成后，data的值:{"memberId":"123","password":"123456","loanId":"196","amount":"-100"}
-http_request类，请求response  {"status":0,"code":"11007","data":null,"msg":"参数错误，投资金额必须是能被100整除的正整数"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr class='passClass warning'>
-    <td>test_login.LoginTest</td>
-    <td class="text-center">5</td>
-    <td class="text-center">5</td>
-    <td class="text-center">0</td>
-    <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c3',5)" class="detail" id='c3'>详细</a></td>
-</tr>
-
-<tr id='pt3_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_login_1</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt3_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_1'>通过</button>
-    <div id='div_pt3_1' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt3_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_1'>通过</button>
-    <div id='div_pt3_1' class="collapse in" align="left">
-    <pre>
-    
-pt3_1: 开始测试:登录成功
-测试用例入参:{"mobilephone":"18888886666","pwd":"123456"}
-http_request类，请求response  {"status":1,"code":"10001","data":null,"msg":"登录成功"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt3_2' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_login_2</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt3_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_2'>通过</button>
-    <div id='div_pt3_2' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt3_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_2'>通过</button>
-    <div id='div_pt3_2' class="collapse in" align="left">
-    <pre>
-    
-pt3_2: 开始测试:参数不能为空（用户名不能为空）
-测试用例入参:{"mobilephone":"","pwd":"123457"}
-http_request类，请求response  {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt3_3' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_login_3</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt3_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_3'>通过</button>
-    <div id='div_pt3_3' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt3_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_3'>通过</button>
-    <div id='div_pt3_3' class="collapse in" align="left">
-    <pre>
-    
-pt3_3: 开始测试:参数不能为空（密码不能为空）
-测试用例入参:{"mobilephone":"18888886666","pwd":""}
-http_request类，请求response  {"status":0,"code":"20103","data":null,"msg":"密码不能为空"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt3_4' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_login_4</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt3_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_4'>通过</button>
-    <div id='div_pt3_4' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt3_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_4'>通过</button>
-    <div id='div_pt3_4' class="collapse in" align="left">
-    <pre>
-    
-pt3_4: 开始测试:用户名或密码错误
-测试用例入参:{"mobilephone":"18888881111","pwd":"123456"}
-http_request类，请求response  {"status":0,"code":"20111","data":null,"msg":"用户名或密码错误"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt3_5' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_login_5</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt3_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_5'>通过</button>
-    <div id='div_pt3_5' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt3_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_5'>通过</button>
-    <div id='div_pt3_5' class="collapse in" align="left">
-    <pre>
-    
-pt3_5: 开始测试:用户名或密码错误
-测试用例入参:{"mobilephone":"18888886666","pwd":"654321"}
-http_request类，请求response  {"status":0,"code":"20111","data":null,"msg":"用户名或密码错误"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr class='passClass warning'>
-    <td>test_recharge.RechargeTest</td>
-    <td class="text-center">9</td>
-    <td class="text-center">9</td>
-    <td class="text-center">0</td>
-    <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c4',9)" class="detail" id='c4'>详细</a></td>
-</tr>
-
-<tr id='pt4_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_1</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_1'>通过</button>
-    <div id='div_pt4_1' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_1'>通过</button>
-    <div id='div_pt4_1' class="collapse in" align="left">
-    <pre>
-    
-pt4_1: --- Logging error ---
+ft2_4: ImportError: Failed to import test module: test_register
 Traceback (most recent call last):
-  File "D:\Python34\lib\logging\__init__.py", line 978, in emit
-    msg = self.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 828, in format
-    return fmt.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 565, in format
-    record.message = record.getMessage()
-  File "D:\Python34\lib\logging\__init__.py", line 328, in getMessage
-    msg = msg % self.args
-TypeError: not all arguments converted during string formatting
-Call stack:
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
-    htmltestrunner.html_test()
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
-    runner.run(discover)
-  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\case.py", line 635, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\case.py", line 587, in run
-    testMethod()
-  File "D:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\PycharmProjects\api_AutoTest\Testcases\test_recharge.py", line 46, in test_recharge
-    logger.info("测试入参 ",case.data)
-Message: '测试入参 '
-Arguments: ('{"mobilephone":"18888886666","pwd":"123456"}',)
---- Logging error ---
-Traceback (most recent call last):
-  File "D:\Python34\lib\logging\__init__.py", line 978, in emit
-    msg = self.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 828, in format
-    return fmt.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 565, in format
-    record.message = record.getMessage()
-  File "D:\Python34\lib\logging\__init__.py", line 328, in getMessage
-    msg = msg % self.args
-TypeError: not all arguments converted during string formatting
-Call stack:
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
-    htmltestrunner.html_test()
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
-    runner.run(discover)
-  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\case.py", line 635, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\case.py", line 587, in run
-    testMethod()
-  File "D:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\PycharmProjects\api_AutoTest\Testcases\test_recharge.py", line 46, in test_recharge
-    logger.info("测试入参 ",case.data)
-Message: '测试入参 '
-Arguments: ('{"mobilephone":"18888886666","pwd":"123456"}',)
-测试用例标题  登录成功
-测试入参  {"mobilephone":"18888886666","pwd":"123456"}
-http_request类，请求response  {"status":1,"code":"10001","data":null,"msg":"登录成功"}
+  File "D:\python3.6\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "D:\python3.6\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "F:\api_auto_test\Testcases\test_register.py", line 13, in &lt;module&gt;
+    from Common import do_mysql
+  File "F:\api_auto_test\Common\do_mysql.py", line 8, in &lt;module&gt;
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
 
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt4_2' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_2</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_2'>通过</button>
-    <div id='div_pt4_2' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_2'>通过</button>
-    <div id='div_pt4_2' class="collapse in" align="left">
-    <pre>
-    
-pt4_2: --- Logging error ---
-Traceback (most recent call last):
-  File "D:\Python34\lib\logging\__init__.py", line 978, in emit
-    msg = self.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 828, in format
-    return fmt.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 565, in format
-    record.message = record.getMessage()
-  File "D:\Python34\lib\logging\__init__.py", line 328, in getMessage
-    msg = msg % self.args
-TypeError: not all arguments converted during string formatting
-Call stack:
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
-    htmltestrunner.html_test()
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
-    runner.run(discover)
-  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\case.py", line 635, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\case.py", line 587, in run
-    testMethod()
-  File "D:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\PycharmProjects\api_AutoTest\Testcases\test_recharge.py", line 46, in test_recharge
-    logger.info("测试入参 ",case.data)
-Message: '测试入参 '
-Arguments: ('{"mobilephone": "18888886666", "amount": "200"}',)
---- Logging error ---
-Traceback (most recent call last):
-  File "D:\Python34\lib\logging\__init__.py", line 978, in emit
-    msg = self.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 828, in format
-    return fmt.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 565, in format
-    record.message = record.getMessage()
-  File "D:\Python34\lib\logging\__init__.py", line 328, in getMessage
-    msg = msg % self.args
-TypeError: not all arguments converted during string formatting
-Call stack:
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
-    htmltestrunner.html_test()
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
-    runner.run(discover)
-  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\case.py", line 635, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\case.py", line 587, in run
-    testMethod()
-  File "D:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\PycharmProjects\api_AutoTest\Testcases\test_recharge.py", line 46, in test_recharge
-    logger.info("测试入参 ",case.data)
-Message: '测试入参 '
-Arguments: ('{"mobilephone": "18888886666", "amount": "200"}',)
-测试用例标题  充值成功
-测试入参  {"mobilephone": "18888886666", "amount": "200"}
-执行sql返回一个字典:{'RegName': '小蜜蜂', 'Pwd': 'E10ADC3949BA59ABBE56E057F20F883E', 'Id': 123, 'LeaveAmount': Decimal('123.00'), 'RegTime': datetime.datetime(2019, 5, 1, 22, 56, 38), 'MobilePhone': '18888886666', 'Type': 1}
-充值前金额:{} 123.00
-http_request类，请求response  {"status":1,"code":"10001","data":{"id":123,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"18888886666","leaveamount":"323.00","type":"1","regtime":"2019-05-01 22:56:38.0"},"msg":"充值成功"}
-充值后金额:323.00
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt4_3' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_3</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_3'>通过</button>
-    <div id='div_pt4_3' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_3'>通过</button>
-    <div id='div_pt4_3' class="collapse in" align="left">
-    <pre>
-    
-pt4_3: --- Logging error ---
-Traceback (most recent call last):
-  File "D:\Python34\lib\logging\__init__.py", line 978, in emit
-    msg = self.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 828, in format
-    return fmt.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 565, in format
-    record.message = record.getMessage()
-  File "D:\Python34\lib\logging\__init__.py", line 328, in getMessage
-    msg = msg % self.args
-TypeError: not all arguments converted during string formatting
-Call stack:
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
-    htmltestrunner.html_test()
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
-    runner.run(discover)
-  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\case.py", line 635, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\case.py", line 587, in run
-    testMethod()
-  File "D:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\PycharmProjects\api_AutoTest\Testcases\test_recharge.py", line 46, in test_recharge
-    logger.info("测试入参 ",case.data)
-Message: '测试入参 '
-Arguments: ('{"mobilephone": "", "amount": "100"}',)
---- Logging error ---
-Traceback (most recent call last):
-  File "D:\Python34\lib\logging\__init__.py", line 978, in emit
-    msg = self.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 828, in format
-    return fmt.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 565, in format
-    record.message = record.getMessage()
-  File "D:\Python34\lib\logging\__init__.py", line 328, in getMessage
-    msg = msg % self.args
-TypeError: not all arguments converted during string formatting
-Call stack:
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
-    htmltestrunner.html_test()
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
-    runner.run(discover)
-  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\case.py", line 635, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\case.py", line 587, in run
-    testMethod()
-  File "D:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\PycharmProjects\api_AutoTest\Testcases\test_recharge.py", line 46, in test_recharge
-    logger.info("测试入参 ",case.data)
-Message: '测试入参 '
-Arguments: ('{"mobilephone": "", "amount": "100"}',)
-测试用例标题  请输入手机号
-测试入参  {"mobilephone": "", "amount": "100"}
-http_request类，请求response  {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt4_4' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_4</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_4'>通过</button>
-    <div id='div_pt4_4' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_4'>通过</button>
-    <div id='div_pt4_4' class="collapse in" align="left">
-    <pre>
-    
-pt4_4: --- Logging error ---
-Traceback (most recent call last):
-  File "D:\Python34\lib\logging\__init__.py", line 978, in emit
-    msg = self.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 828, in format
-    return fmt.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 565, in format
-    record.message = record.getMessage()
-  File "D:\Python34\lib\logging\__init__.py", line 328, in getMessage
-    msg = msg % self.args
-TypeError: not all arguments converted during string formatting
-Call stack:
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
-    htmltestrunner.html_test()
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
-    runner.run(discover)
-  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\case.py", line 635, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\case.py", line 587, in run
-    testMethod()
-  File "D:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\PycharmProjects\api_AutoTest\Testcases\test_recharge.py", line 46, in test_recharge
-    logger.info("测试入参 ",case.data)
-Message: '测试入参 '
-Arguments: ('{"mobilephone": "18888886661", "amount": ""}',)
---- Logging error ---
-Traceback (most recent call last):
-  File "D:\Python34\lib\logging\__init__.py", line 978, in emit
-    msg = self.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 828, in format
-    return fmt.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 565, in format
-    record.message = record.getMessage()
-  File "D:\Python34\lib\logging\__init__.py", line 328, in getMessage
-    msg = msg % self.args
-TypeError: not all arguments converted during string formatting
-Call stack:
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
-    htmltestrunner.html_test()
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
-    runner.run(discover)
-  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\case.py", line 635, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\case.py", line 587, in run
-    testMethod()
-  File "D:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\PycharmProjects\api_AutoTest\Testcases\test_recharge.py", line 46, in test_recharge
-    logger.info("测试入参 ",case.data)
-Message: '测试入参 '
-Arguments: ('{"mobilephone": "18888886661", "amount": ""}',)
-测试用例标题  请输入金额
-测试入参  {"mobilephone": "18888886661", "amount": ""}
-http_request类，请求response  {"status":0,"code":"20115","data":null,"msg":"请输入金额"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt4_5' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_5</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_5'>通过</button>
-    <div id='div_pt4_5' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_5'>通过</button>
-    <div id='div_pt4_5' class="collapse in" align="left">
-    <pre>
-    
-pt4_5: --- Logging error ---
-Traceback (most recent call last):
-  File "D:\Python34\lib\logging\__init__.py", line 978, in emit
-    msg = self.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 828, in format
-    return fmt.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 565, in format
-    record.message = record.getMessage()
-  File "D:\Python34\lib\logging\__init__.py", line 328, in getMessage
-    msg = msg % self.args
-TypeError: not all arguments converted during string formatting
-Call stack:
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
-    htmltestrunner.html_test()
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
-    runner.run(discover)
-  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\case.py", line 635, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\case.py", line 587, in run
-    testMethod()
-  File "D:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\PycharmProjects\api_AutoTest\Testcases\test_recharge.py", line 46, in test_recharge
-    logger.info("测试入参 ",case.data)
-Message: '测试入参 '
-Arguments: ('{"mobilephone": "17755556666", "amount": "103"}',)
---- Logging error ---
-Traceback (most recent call last):
-  File "D:\Python34\lib\logging\__init__.py", line 978, in emit
-    msg = self.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 828, in format
-    return fmt.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 565, in format
-    record.message = record.getMessage()
-  File "D:\Python34\lib\logging\__init__.py", line 328, in getMessage
-    msg = msg % self.args
-TypeError: not all arguments converted during string formatting
-Call stack:
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
-    htmltestrunner.html_test()
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
-    runner.run(discover)
-  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\case.py", line 635, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\case.py", line 587, in run
-    testMethod()
-  File "D:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\PycharmProjects\api_AutoTest\Testcases\test_recharge.py", line 46, in test_recharge
-    logger.info("测试入参 ",case.data)
-Message: '测试入参 '
-Arguments: ('{"mobilephone": "17755556666", "amount": "103"}',)
-测试用例标题  此手机号对应的会员不存在
-测试入参  {"mobilephone": "17755556666", "amount": "103"}
-http_request类，请求response  {"status":0,"code":"20104","data":null,"msg":"此手机号对应的会员不存在"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt4_6' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_6</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_6'>通过</button>
-    <div id='div_pt4_6' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_6'>通过</button>
-    <div id='div_pt4_6' class="collapse in" align="left">
-    <pre>
-    
-pt4_6: --- Logging error ---
-Traceback (most recent call last):
-  File "D:\Python34\lib\logging\__init__.py", line 978, in emit
-    msg = self.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 828, in format
-    return fmt.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 565, in format
-    record.message = record.getMessage()
-  File "D:\Python34\lib\logging\__init__.py", line 328, in getMessage
-    msg = msg % self.args
-TypeError: not all arguments converted during string formatting
-Call stack:
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
-    htmltestrunner.html_test()
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
-    runner.run(discover)
-  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\case.py", line 635, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\case.py", line 587, in run
-    testMethod()
-  File "D:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\PycharmProjects\api_AutoTest\Testcases\test_recharge.py", line 46, in test_recharge
-    logger.info("测试入参 ",case.data)
-Message: '测试入参 '
-Arguments: ('{"mobilephone": "18888886666", "amount": "50.555"}',)
---- Logging error ---
-Traceback (most recent call last):
-  File "D:\Python34\lib\logging\__init__.py", line 978, in emit
-    msg = self.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 828, in format
-    return fmt.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 565, in format
-    record.message = record.getMessage()
-  File "D:\Python34\lib\logging\__init__.py", line 328, in getMessage
-    msg = msg % self.args
-TypeError: not all arguments converted during string formatting
-Call stack:
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
-    htmltestrunner.html_test()
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
-    runner.run(discover)
-  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\case.py", line 635, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\case.py", line 587, in run
-    testMethod()
-  File "D:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\PycharmProjects\api_AutoTest\Testcases\test_recharge.py", line 46, in test_recharge
-    logger.info("测试入参 ",case.data)
-Message: '测试入参 '
-Arguments: ('{"mobilephone": "18888886666", "amount": "50.555"}',)
-测试用例标题  输入金额的金额小数不能超过两位
-测试入参  {"mobilephone": "18888886666", "amount": "50.555"}
-http_request类，请求response  {"status":0,"code":"20116","data":null,"msg":"输入金额的金额小数不能超过两位"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt4_7' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_7</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_7'>通过</button>
-    <div id='div_pt4_7' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_7'>通过</button>
-    <div id='div_pt4_7' class="collapse in" align="left">
-    <pre>
-    
-pt4_7: --- Logging error ---
-Traceback (most recent call last):
-  File "D:\Python34\lib\logging\__init__.py", line 978, in emit
-    msg = self.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 828, in format
-    return fmt.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 565, in format
-    record.message = record.getMessage()
-  File "D:\Python34\lib\logging\__init__.py", line 328, in getMessage
-    msg = msg % self.args
-TypeError: not all arguments converted during string formatting
-Call stack:
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
-    htmltestrunner.html_test()
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
-    runner.run(discover)
-  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\case.py", line 635, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\case.py", line 587, in run
-    testMethod()
-  File "D:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\PycharmProjects\api_AutoTest\Testcases\test_recharge.py", line 46, in test_recharge
-    logger.info("测试入参 ",case.data)
-Message: '测试入参 '
-Arguments: ('{"mobilephone": "18888886666", "amount": "-1"}',)
---- Logging error ---
-Traceback (most recent call last):
-  File "D:\Python34\lib\logging\__init__.py", line 978, in emit
-    msg = self.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 828, in format
-    return fmt.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 565, in format
-    record.message = record.getMessage()
-  File "D:\Python34\lib\logging\__init__.py", line 328, in getMessage
-    msg = msg % self.args
-TypeError: not all arguments converted during string formatting
-Call stack:
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
-    htmltestrunner.html_test()
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
-    runner.run(discover)
-  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\case.py", line 635, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\case.py", line 587, in run
-    testMethod()
-  File "D:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\PycharmProjects\api_AutoTest\Testcases\test_recharge.py", line 46, in test_recharge
-    logger.info("测试入参 ",case.data)
-Message: '测试入参 '
-Arguments: ('{"mobilephone": "18888886666", "amount": "-1"}',)
-测试用例标题  请输入范围在0-50万之间的正数金额
-测试入参  {"mobilephone": "18888886666", "amount": "-1"}
-http_request类，请求response  {"status":0,"code":"20117","data":null,"msg":"请输入范围在0到50万之间的正数金额"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt4_8' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_8</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_8'>通过</button>
-    <div id='div_pt4_8' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_8'>通过</button>
-    <div id='div_pt4_8' class="collapse in" align="left">
-    <pre>
-    
-pt4_8: --- Logging error ---
-Traceback (most recent call last):
-  File "D:\Python34\lib\logging\__init__.py", line 978, in emit
-    msg = self.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 828, in format
-    return fmt.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 565, in format
-    record.message = record.getMessage()
-  File "D:\Python34\lib\logging\__init__.py", line 328, in getMessage
-    msg = msg % self.args
-TypeError: not all arguments converted during string formatting
-Call stack:
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
-    htmltestrunner.html_test()
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
-    runner.run(discover)
-  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\case.py", line 635, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\case.py", line 587, in run
-    testMethod()
-  File "D:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\PycharmProjects\api_AutoTest\Testcases\test_recharge.py", line 46, in test_recharge
-    logger.info("测试入参 ",case.data)
-Message: '测试入参 '
-Arguments: ('{"mobilephone": "18888886666", "amount": "500001"}',)
---- Logging error ---
-Traceback (most recent call last):
-  File "D:\Python34\lib\logging\__init__.py", line 978, in emit
-    msg = self.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 828, in format
-    return fmt.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 565, in format
-    record.message = record.getMessage()
-  File "D:\Python34\lib\logging\__init__.py", line 328, in getMessage
-    msg = msg % self.args
-TypeError: not all arguments converted during string formatting
-Call stack:
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
-    htmltestrunner.html_test()
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
-    runner.run(discover)
-  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\case.py", line 635, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\case.py", line 587, in run
-    testMethod()
-  File "D:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\PycharmProjects\api_AutoTest\Testcases\test_recharge.py", line 46, in test_recharge
-    logger.info("测试入参 ",case.data)
-Message: '测试入参 '
-Arguments: ('{"mobilephone": "18888886666", "amount": "500001"}',)
-测试用例标题  请输入范围在0-50万之间的正数金额
-测试入参  {"mobilephone": "18888886666", "amount": "500001"}
-http_request类，请求response  {"status":0,"code":"20117","data":null,"msg":"请输入范围在0到50万之间的正数金额"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt4_9' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_9</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_9'>通过</button>
-    <div id='div_pt4_9' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_9'>通过</button>
-    <div id='div_pt4_9' class="collapse in" align="left">
-    <pre>
-    
-pt4_9: --- Logging error ---
-Traceback (most recent call last):
-  File "D:\Python34\lib\logging\__init__.py", line 978, in emit
-    msg = self.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 828, in format
-    return fmt.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 565, in format
-    record.message = record.getMessage()
-  File "D:\Python34\lib\logging\__init__.py", line 328, in getMessage
-    msg = msg % self.args
-TypeError: not all arguments converted during string formatting
-Call stack:
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
-    htmltestrunner.html_test()
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
-    runner.run(discover)
-  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\case.py", line 635, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\case.py", line 587, in run
-    testMethod()
-  File "D:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\PycharmProjects\api_AutoTest\Testcases\test_recharge.py", line 46, in test_recharge
-    logger.info("测试入参 ",case.data)
-Message: '测试入参 '
-Arguments: ('{"mobilephone": "18888886666", "amount": "一百"}',)
---- Logging error ---
-Traceback (most recent call last):
-  File "D:\Python34\lib\logging\__init__.py", line 978, in emit
-    msg = self.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 828, in format
-    return fmt.format(record)
-  File "D:\Python34\lib\logging\__init__.py", line 565, in format
-    record.message = record.getMessage()
-  File "D:\Python34\lib\logging\__init__.py", line 328, in getMessage
-    msg = msg % self.args
-TypeError: not all arguments converted during string formatting
-Call stack:
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 35, in &lt;module&gt;
-    htmltestrunner.html_test()
-  File "D:/Jenkins/workspace/api_auto_test/TestCases/run.py", line 30, in html_test
-    runner.run(discover)
-  File "D:\Python34\lib\site-packages\HTMLTestRunnerNew.py", line 541, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\suite.py", line 84, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\suite.py", line 122, in run
-    test(result)
-  File "D:\Python34\lib\unittest\case.py", line 635, in __call__
-    return self.run(*args, **kwds)
-  File "D:\Python34\lib\unittest\case.py", line 587, in run
-    testMethod()
-  File "D:\Python34\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "E:\PycharmProjects\api_AutoTest\Testcases\test_recharge.py", line 46, in test_recharge
-    logger.info("测试入参 ",case.data)
-Message: '测试入参 '
-Arguments: ('{"mobilephone": "18888886666", "amount": "一百"}',)
-测试用例标题  请输入数字
-测试入参  {"mobilephone": "18888886666", "amount": "一百"}
-http_request类，请求response  {"status":0,"code":"20118","data":null,"msg":"请输入数字"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr class='passClass warning'>
-    <td>test_register.RegisterTest</td>
-    <td class="text-center">6</td>
-    <td class="text-center">6</td>
-    <td class="text-center">0</td>
-    <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c5',6)" class="detail" id='c5'>详细</a></td>
-</tr>
-
-<tr id='pt5_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_1</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt5_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_1'>通过</button>
-    <div id='div_pt5_1' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt5_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt5_1'>通过</button>
-    <div id='div_pt5_1' class="collapse in" align="left">
-    <pre>
-    
-pt5_1: 开始测试:注册成功
-测试用例入参:{"mobilephone":"register_mobile","pwd":"123456"}
-最大手机号码  18999999407
-注册前手机号为:18999999406
-http_request类，请求response  {"status":1,"code":"10001","data":null,"msg":"注册成功"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt5_2' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_2</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt5_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_2'>通过</button>
-    <div id='div_pt5_2' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt5_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt5_2'>通过</button>
-    <div id='div_pt5_2' class="collapse in" align="left">
-    <pre>
-    
-pt5_2: 开始测试:参数不能为空（手机号不能为空）
-测试用例入参:{"mobilephone":"","pwd":"123457"}
-http_request类，请求response  {"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt5_3' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_3</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt5_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_3'>通过</button>
-    <div id='div_pt5_3' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt5_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt5_3'>通过</button>
-    <div id='div_pt5_3' class="collapse in" align="left">
-    <pre>
-    
-pt5_3: 开始测试:参数不能为空（密码不能为空）
-测试用例入参:{"mobilephone":"13255558888","pwd":""}
-http_request类，请求response  {"status":0,"code":"20103","data":null,"msg":"密码不能为空"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt5_4' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_4</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt5_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_4'>通过</button>
-    <div id='div_pt5_4' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt5_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt5_4'>通过</button>
-    <div id='div_pt5_4' class="collapse in" align="left">
-    <pre>
-    
-pt5_4: 开始测试:密码长度必须为 6~18
-测试用例入参:{"mobilephone":"18899995555","pwd":"12345"}
-http_request类，请求response  {"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt5_5' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_5</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt5_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_5'>通过</button>
-    <div id='div_pt5_5' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt5_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt5_5'>通过</button>
-    <div id='div_pt5_5' class="collapse in" align="left">
-    <pre>
-    
-pt5_5: 开始测试:手机号码格式不正确
-测试用例入参:{"mobilephone":"11100001111","pwd":"123458"}
-http_request类，请求response  {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt5_6' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_6</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt5_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_6'>通过</button>
-    <div id='div_pt5_6' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt5_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt5_6'>通过</button>
-    <div id='div_pt5_6' class="collapse in" align="left">
-    <pre>
-    
-pt5_6: 开始测试:手机号码已被注册
-测试用例入参:{"mobilephone":"18888886666","pwd":"123456"}
-http_request类，请求response  {"status":0,"code":"20110","data":null,"msg":"手机号码已被注册"}
 
 
     </pre>
@@ -1574,11 +329,11 @@ http_request类，请求response  {"status":0,"code":"20110","data":null,"msg":"
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>29</td>
-    <td>28</td>
-    <td>1</td>
+    <td>6</td>
+    <td>2</td>
     <td>0</td>
-    <td>通过率：96.55%</td>
+    <td>4</td>
+    <td>通过率：33.33%</td>
 </tr>
 </table>
 

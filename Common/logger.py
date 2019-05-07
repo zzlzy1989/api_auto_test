@@ -48,8 +48,8 @@ def get_logger(name):
     return logger
 
 
-# logger = get_logger('case')
-# logger.info('测试开始啦')
-# logger.error('测试报错')
-# logger.debug('测试数据')
-# logger.info('测试结束')
+logger = get_logger('case')
+logger.info('测试开始啦')
+logger.error('测试报错')
+logger.debug('测试数据')
+logger.info('测试结束')
