@@ -1,5 +1,5 @@
 #-*-coding:utf-8-*-
-#@Time      :2019/5/1 0001 23:50
+#@Time      :2019年5月10日19:01:23
 #@Author    :蓝天下的风
 #@Email     :394845369@qq.com
 #@File      :test_registe.py
