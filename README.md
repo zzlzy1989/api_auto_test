@@ -88,3 +88,37 @@
         添加：Editable Extended Email Publisher 》》》 Attachments（附件）Reports/report.html,
             Attach Build Log配置Do Not Attach Build Log
     10、点击构建，即可进行自动构建项目！
+
+六、部分类和方法的说明
+    1、用TestCase类来实现一个测试
+        1）我们将通过集成TestCase类并且 在测试类中为每一个测试添加测试方法来创建单个测试或者一组测试；
+            测试用例使用excel维护，并且进行参数化，通过自定义context上下文管理的类，来操作excel，对excel中的参数进行匹配和替换；
+        2）TestCase中的常用的assert方法，最主要的任务是：
+            调用assertEqual()来校验结果；
+            assertTrue()来验证条件；
+            assertRaises来验证预期的异常；
+            通过使用第三方库pymysql（Mysql）查询SQL，和TestCase的返回值，进行匹配校验；
+            操作过程中重要的返回结果将通过调用logger来进行记录，以便快速定位问题；
+        3）除了添加测试，还可以添加测试夹具，setUp()方法和tearDown()方法；
+        4）一个测试用例是从setUp()方法开始执行，因此可以在每个测试开始前执行一些初始化的任务；此方法无参数，也无返回值；
+        5）接着编写test方法，这些测试方法命名为test开头，这种命名约定通知test runner哪个方法代表测试方法；
+        6）值得注意的是：test runner能找到的每个测试方法，都会在执行测试方法之前先执行setUp()方法，
+            这样有助于确保每个测试方法都能够依赖于相同的环境；
+        7）tearDown()方法会在测试执行完成之后调用，用来清理所有的初始值；
+        8）最后就是运行测试：为了能通过命令行测试，我们可以在测试中添加对main方法的调用；
+        9) 优化：为了能让各个测试方法共用一个实例，我们可以创建类级别的setUp()和tearDown()方法：
+            1）通过setUpClass()方法和tearDownClass()方法及@classmethod标识来实现；
+            2）这两个方法使在类级别初始化数据，替代了方法级别的初始化；
+    2、学习unittest提供的不同类型的assert方法
+        断言：unittest的TestCase类提供了很多实用的方法来校验预期结果和实际结果是否一致；以下为常用的集中断言方式：
+        assertEqual(a, b [, msg]);
+        assertNotEqual(a, b [, msg]);
+        assertTrue(x [, msg]); assertFalse(x [, msg]);
+        assertIsNot(a, b [, msg]);
+        assertRaises(exc, fun, *args, **kwds);
+    3、为一组测试创建TestSuite
+        应用unittest的TestSuites特性，可以将不同的测试组成一个逻辑组，然后设置统一的测试套件，并通过一个命令来执行；
+        具体通过TestSuites、TestLoader和TestRunner类来实现的；
+        我们使用TestSuites类来定义和执行测试套件，将多可测试加到一个测试套件中；
+        还用TestLoader和TextTestRunner创建和运行测试套件；
+    4、使用unittest扩展来生成HTML格式的测试报告
