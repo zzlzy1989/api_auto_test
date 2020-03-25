@@ -1,4 +1,3 @@
-
 from suds.client import Client
 
 #要访问的Webservice地址
